@@ -51,9 +51,31 @@
         </div>
     </div>
 
+    <!-- Modal für Mobile-Warnung -->
+    <div class="modal fade" id="mobileWarningModal" tabindex="-1" aria-labelledby="mobileWarningLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="mobileWarningLabel">Warnung</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Diese Seite ist nicht für mobile Geräte optimiert. Bitte nutze einen Desktop, um das Snake-Spiel zu spielen.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Schließen</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Dateien -->
     <script src="snake.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="mobileWarning.js"></script> <!-- Neue JavaScript Datei für Mobile-Warnung -->
 </body>
 </html>
